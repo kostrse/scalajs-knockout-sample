@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="scripts/knockout.js"></script>
+  <script type="text/javascript" src="target/scala-2.11/scala-js-knockout-sample-fastopt.js"></script>
+</head>
+
+<body>
+
+  <div id="container1">
+    <p>First name: <input data-bind="value: firstName" /></p>
+    <p>Last name: <input data-bind="value: lastName" /></p>
+    <p>Full name: <strong data-bind="text: fullName"></strong></p>
+  </div>
+
+  <script type="text/javascript">
+    var containerElement = document.getElementById("container1");
+    kostrse.Application().init(containerElement);
+  </script>
+
+</body>
+
+</html>
